@@ -10,7 +10,7 @@ import dagger.Component;
 @ApplicationScope
 public interface AppComponent {
 
-  ActivitySubcomponent plusActivity(ActivityModule activityModule);
+  ActivitySubcomponent plusActivityGraph(ActivityModule activityModule);
 
   void inject(App app);
 }

@@ -7,11 +7,6 @@ import android.view.LayoutInflater;
 import dagger.Module;
 import dagger.Provides;
 
-import javax.inject.Named;
-
-/**
- * Created by jakub on 01/06/15.
- */
 @Module
 public class ActivityModule {
 
@@ -34,7 +29,7 @@ public class ActivityModule {
   }
 
   @Provides
-  @Named("port")
+  @Port
   public Integer providePortNumber() {
     return 80;
   }

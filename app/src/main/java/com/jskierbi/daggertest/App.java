@@ -5,9 +5,6 @@ import com.jskierbi.daggertest.dagger.AppComponent;
 import com.jskierbi.daggertest.dagger.AppModule;
 import com.jskierbi.daggertest.dagger.DaggerAppComponent;
 
-/**
- * Created by jakub on 01/06/15.
- */
 public class App extends Application {
 
   private AppComponent mAppComponent;
