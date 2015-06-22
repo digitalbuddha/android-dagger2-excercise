@@ -7,9 +7,6 @@ import dagger.Provides;
 
 @Module
 public class IntentModule {
-  public IntentModule(){
-  }
-
   @Provides
   public Bundle provideBundle(Activity context) {
     return context.getIntent().getExtras()==null?new Bundle():context.getIntent().getExtras();

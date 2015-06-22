@@ -3,10 +3,9 @@ package com.jskierbi.daggertest;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.TextView;
-import com.jskierbi.daggertest.dagger.module.ActivityModule;
 import com.jskierbi.daggertest.dagger.ActivitySubcomponent;
-import com.jskierbi.daggertest.dagger.module.IntentModule;
 import com.jskierbi.daggertest.dagger.annotation.Port;
+import com.jskierbi.daggertest.dagger.module.ActivityModule;
 import javax.inject.Inject;
 
 
@@ -32,7 +31,7 @@ public class MainActivity extends ActionBarActivity {
     activityComponent =
         ((App) getApplication())
             .getAppComponent()
-            .plusActivityGraph(new ActivityModule(this),new IntentModule());
+            .plusActivityGraph(new ActivityModule(this));
 
     activityComponent.inject(this);
 

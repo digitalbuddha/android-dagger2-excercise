@@ -4,7 +4,6 @@ import com.jskierbi.daggertest.App;
 import com.jskierbi.daggertest.dagger.annotation.ApplicationScope;
 import com.jskierbi.daggertest.dagger.module.ActivityModule;
 import com.jskierbi.daggertest.dagger.module.AppModule;
-import com.jskierbi.daggertest.dagger.module.IntentModule;
 import dagger.Component;
 
 /**
@@ -14,7 +13,7 @@ import dagger.Component;
 @ApplicationScope
 public interface AppComponent {
 
-  ActivitySubcomponent plusActivityGraph(ActivityModule activityModule,IntentModule intentModule);
+  ActivitySubcomponent plusActivityGraph(ActivityModule activityModule);
 
   void inject(App app);
 }
