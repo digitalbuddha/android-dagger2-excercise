@@ -1,8 +1,8 @@
 package com.jskierbi.daggertest;
 
 import android.content.Context;
-import com.jskierbi.daggertest.dagger.ApplicationScope;
-import com.jskierbi.daggertest.dagger.ForApplication;
+import com.jskierbi.daggertest.dagger.annotation.ApplicationScope;
+import com.jskierbi.daggertest.dagger.annotation.ForApplication;
 import javax.inject.Inject;
 
 @ApplicationScope

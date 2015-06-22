@@ -3,10 +3,10 @@ package com.jskierbi.daggertest;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.TextView;
-import com.jskierbi.daggertest.dagger.ActivityModule;
+import com.jskierbi.daggertest.dagger.module.ActivityModule;
 import com.jskierbi.daggertest.dagger.ActivitySubcomponent;
-import com.jskierbi.daggertest.dagger.IntentModule;
-import com.jskierbi.daggertest.dagger.Port;
+import com.jskierbi.daggertest.dagger.module.IntentModule;
+import com.jskierbi.daggertest.dagger.annotation.Port;
 import javax.inject.Inject;
 
 

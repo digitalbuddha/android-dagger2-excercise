@@ -1,7 +1,7 @@
 package com.jskierbi.daggertest;
 
 import android.content.Context;
-import com.jskierbi.daggertest.dagger.ForActivity;
+import com.jskierbi.daggertest.dagger.annotation.ForActivity;
 import java.util.Date;
 import javax.inject.Inject;
 

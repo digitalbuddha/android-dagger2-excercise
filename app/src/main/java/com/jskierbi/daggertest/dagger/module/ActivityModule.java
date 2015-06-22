@@ -1,9 +1,12 @@
-package com.jskierbi.daggertest.dagger;
+package com.jskierbi.daggertest.dagger.module;
 
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.view.LayoutInflater;
+import com.jskierbi.daggertest.dagger.annotation.ActivityScope;
+import com.jskierbi.daggertest.dagger.annotation.ForActivity;
+import com.jskierbi.daggertest.dagger.annotation.Port;
 import dagger.Module;
 import dagger.Provides;
 

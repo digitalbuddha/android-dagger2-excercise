@@ -1,6 +1,6 @@
-package com.jskierbi.daggertest.dagger;
+package com.jskierbi.daggertest.dagger.annotation;
 
-import javax.inject.Qualifier;
+import javax.inject.Scope;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
@@ -8,6 +8,6 @@ import java.lang.annotation.RetentionPolicy;
  * Created by jakub on 01/06/15.
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Qualifier
-public @interface ForActivity {
+@Scope
+public @interface ActivityScope {
 }

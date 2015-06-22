@@ -2,7 +2,7 @@ package com.jskierbi.daggertest;
 
 import android.app.Application;
 import com.jskierbi.daggertest.dagger.AppComponent;
-import com.jskierbi.daggertest.dagger.AppModule;
+import com.jskierbi.daggertest.dagger.module.AppModule;
 import com.jskierbi.daggertest.dagger.DaggerAppComponent;
 
 public class App extends Application {

@@ -1,6 +1,10 @@
 package com.jskierbi.daggertest.dagger;
 
 import com.jskierbi.daggertest.App;
+import com.jskierbi.daggertest.dagger.annotation.ApplicationScope;
+import com.jskierbi.daggertest.dagger.module.ActivityModule;
+import com.jskierbi.daggertest.dagger.module.AppModule;
+import com.jskierbi.daggertest.dagger.module.IntentModule;
 import dagger.Component;
 
 /**

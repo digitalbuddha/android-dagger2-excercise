@@ -1,6 +1,9 @@
 package com.jskierbi.daggertest.dagger;
 
 import com.jskierbi.daggertest.MainActivity;
+import com.jskierbi.daggertest.dagger.annotation.ActivityScope;
+import com.jskierbi.daggertest.dagger.module.ActivityModule;
+import com.jskierbi.daggertest.dagger.module.IntentModule;
 import dagger.Subcomponent;
 
 /**

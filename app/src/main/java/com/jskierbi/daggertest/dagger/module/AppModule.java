@@ -1,7 +1,9 @@
-package com.jskierbi.daggertest.dagger;
+package com.jskierbi.daggertest.dagger.module;
 
 import android.content.Context;
 import com.jskierbi.daggertest.App;
+import com.jskierbi.daggertest.dagger.annotation.ApplicationScope;
+import com.jskierbi.daggertest.dagger.annotation.ForApplication;
 import dagger.Module;
 import dagger.Provides;
 

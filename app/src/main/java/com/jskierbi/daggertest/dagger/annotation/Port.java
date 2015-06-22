@@ -1,4 +1,4 @@
-package com.jskierbi.daggertest.dagger;
+package com.jskierbi.daggertest.dagger.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
