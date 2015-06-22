@@ -40,4 +40,8 @@ public class ActivityModule {
     return mActivity;
   }
 
+  @Provides Activity provideActivity(){
+    return mActivity;
+  }
+
 }

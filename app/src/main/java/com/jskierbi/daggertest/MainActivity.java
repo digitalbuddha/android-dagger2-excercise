@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.jskierbi.daggertest.dagger.ActivityModule;
 import com.jskierbi.daggertest.dagger.ActivitySubcomponent;
 import com.jskierbi.daggertest.dagger.ForApplication;
+import com.jskierbi.daggertest.dagger.IntentModule;
 import com.jskierbi.daggertest.dagger.Port;
 import javax.inject.Inject;
 
@@ -32,6 +33,8 @@ public class MainActivity extends ActionBarActivity {
 
   @Inject DateProvider provider;
 
+  @Inject Bundle bundle;
+
 
   private ActivitySubcomponent activityComponent;
 
@@ -41,7 +44,7 @@ public class MainActivity extends ActionBarActivity {
     activityComponent =
         ((App) getApplication())
             .getAppComponent()
-            .plusActivityGraph(new ActivityModule(this));
+            .plusActivityGraph(new ActivityModule(this),new IntentModule());
 
     activityComponent.inject(this);
 
@@ -49,4 +52,6 @@ public class MainActivity extends ActionBarActivity {
     TextView textView = (TextView) findViewById(R.id.label);
     textView.setText(provider.getDate()+store.get(port).toString());
   }
+
+
 }

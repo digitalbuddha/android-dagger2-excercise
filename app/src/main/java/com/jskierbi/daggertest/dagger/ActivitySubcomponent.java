@@ -6,7 +6,7 @@ import dagger.Subcomponent;
 /**
  * Created by jakub on 01/06/15.
  */
-@Subcomponent(modules = {ActivityModule.class})
+@Subcomponent(modules = {ActivityModule.class,IntentModule.class})
 @ActivityScope
 public interface ActivitySubcomponent {
 
